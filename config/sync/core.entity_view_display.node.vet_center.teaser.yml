@@ -31,9 +31,9 @@ bundle: vet_center
 mode: teaser
 content:
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   content_moderation_control: true
@@ -55,4 +55,8 @@ hidden:
   field_prepare_for_visit: true
   field_table_of_contents: true
   field_vet_center_feature_content: true
+  flag_changed_name: true
+  flag_changed_title: true
+  flag_new: true
+  flag_removed_from_source: true
   search_api_excerpt: true

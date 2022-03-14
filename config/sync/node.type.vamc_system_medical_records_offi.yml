@@ -159,8 +159,8 @@ third_party_settings:
     menu_force_parent: 0
 name: 'VAMC System Medical Records Office'
 type: vamc_system_medical_records_offi
-description: ''
+description: 'A page about how Veterans can access their medical records within a VAMC system.'
 help: ''
 new_revision: true
-preview_mode: 1
+preview_mode: 0
 display_submitted: false

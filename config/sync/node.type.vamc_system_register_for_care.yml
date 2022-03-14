@@ -159,8 +159,8 @@ third_party_settings:
     menu_force_parent: 0
 name: 'VAMC System Register for Care'
 type: vamc_system_register_for_care
-description: ''
+description: 'A page about how Veterans can register for care at a specific VAMC system.'
 help: ''
 new_revision: true
-preview_mode: 1
+preview_mode: 0
 display_submitted: false

@@ -35,9 +35,9 @@ bundle: va_form
 mode: teaser
 content:
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 0
     region: content
 hidden:
   content_moderation_control: true
@@ -63,4 +63,8 @@ hidden:
   field_va_form_type: true
   field_va_form_url: true
   field_va_form_usage: true
+  flag_changed_filename: true
+  flag_changed_title: true
+  flag_deleted: true
+  flag_new_form: true
   search_api_excerpt: true
