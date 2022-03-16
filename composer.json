@@ -100,6 +100,7 @@
         "drupal/migrate_source_ui": "^1.0@RC",
         "drupal/migrate_tools": "5.x-dev#7ae3747d1e30790d11c2eefcc56e0796bea25c76",
         "drupal/migration_tools": "^2.3",
+        "drupal/next": "^1.1",
         "drupal/node_link_report": "^1.14",
         "drupal/node_revision_delete": "^1.0",
         "drupal/node_title_help_text": "^1.0",
@@ -491,6 +492,12 @@
             },
             "weitzman/drupal-test-traits": {
                 "Forbid connection reuse in PHPUnit tests": "patches/weitzman-drupal-test-traits-forbid-connection-reuse.patch"
+            },
+            "drupal/subrequests": {
+                "Get same results on different request": "https://www.drupal.org/files/issues/2019-07-18/change_request_type-63049395-09.patch"
+            },
+            "drupal/decoupled_router": {
+                "Unable to resolve path on node in other language than default": "https://www.drupal.org/files/issues/2021-05-05/3111456-34.patch"
             }
         }
     },

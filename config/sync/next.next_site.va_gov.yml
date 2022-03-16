@@ -1,0 +1,9 @@
+uuid: 304bb4c5-4a23-4b38-9aee-041723a0e046
+langcode: en
+status: true
+dependencies: {  }
+id: va_gov
+label: VA.gov
+base_url: 'http://localhost:3000'
+preview_url: 'http://localhost:3000/api/preview'
+preview_secret: nextjs-preview

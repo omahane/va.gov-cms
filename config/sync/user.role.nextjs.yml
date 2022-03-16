@@ -1,0 +1,19 @@
+uuid: d151823a-05a5-42cc-b4f1-548f477350d0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - subrequests
+    - va_gov_backend
+third_party_settings:
+  va_gov_backend:
+    vgb_description: 'Role for allowing Next.js to access the CMS.'
+id: nextjs
+label: nextjs
+weight: 5
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'bypass node access'
+  - 'issue subrequests'
