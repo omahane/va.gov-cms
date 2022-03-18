@@ -90,4 +90,4 @@ datadog-setup.php
 *.deb
 
 # Oauth keys
-/oauth
+/oauth/*.key
