@@ -88,3 +88,6 @@ datadog-setup.php
 
 # Temporary .deb packages
 *.deb
+
+# Oauth keys
+/oauth
