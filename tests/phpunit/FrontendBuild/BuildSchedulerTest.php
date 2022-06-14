@@ -6,7 +6,6 @@ use Drupal\Core\Datetime\DateFormatter;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Http\RequestStack;
 use Drupal\Core\KeyValueStore\KeyValueMemoryFactory;
-use Drupal\Core\Language\LanguageInterface;
 use Drupal\Core\Language\LanguageManagerInterface;
 use Drupal\Core\State\State;
 use Drupal\Tests\UnitTestCase;
