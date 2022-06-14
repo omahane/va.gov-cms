@@ -32,5 +32,5 @@ class SpecifiedTime extends Time {
   public function getCurrentTime() {
     return $this->timestamp;
   }
- 
+
 }
