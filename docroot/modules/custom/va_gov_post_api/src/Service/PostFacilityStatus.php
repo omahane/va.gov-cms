@@ -56,6 +56,7 @@ class PostFacilityStatus extends PostFacilityBase {
     'vba_facility',
     'vet_center',
     'vet_center_outstation',
+    'vet_center_cap',
   ];
 
   /**
@@ -88,7 +89,13 @@ class PostFacilityStatus extends PostFacilityBase {
       // See README.md
       // Entity fields (updated and original) can be compared and processed in
       // order to structure the payload array.
-      $data['payload'] = $this->getPayload($forcePush);
+      if ($entity->bundle('vet_center_cap')) {
+        $data['payload'] = ["message" => "I got this"];
+        $forcePush = TRUE;
+      }
+      else {
+        $data['payload'] = $this->getPayload($forcePush);
+      }
 
       // Only add to queue if payload is not empty.
       // If its empty, it means that there is no new information to send to
@@ -322,6 +329,7 @@ class PostFacilityStatus extends PostFacilityBase {
    */
   protected function shouldPushSystem(NodeInterface $entity) {
     // If the name of the system changes we should push facility statuses.
+    $cmsOriginatingContent = $entity->bundle("vet_center_cap");
     $moderationState = $entity->get('moderation_state')->value;
     $thisRevisionIsPublished = $entity->isPublished();
     $defaultRevision = $this->getDefaultRevision($entity);
@@ -330,6 +338,9 @@ class PostFacilityStatus extends PostFacilityBase {
     $somethingChanged = $nameChanged || $phoneChanged;
     $push = FALSE;
     if ($thisRevisionIsPublished && $somethingChanged && $moderationState === self::STATE_PUBLISHED) {
+      $push = TRUE;
+    }
+    elseif ($cmsOriginatingContent) {
       $push = TRUE;
     }
     return $push;

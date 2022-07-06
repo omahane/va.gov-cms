@@ -44,6 +44,7 @@ function _post_api_add_facility_status_to_queue(EntityInterface $entity) {
     'vba_facility',
     'vet_center',
     'vet_center_outstation',
+    'vet_center_cap',
   ];
   if (in_array($entity->bundle(), $facilitiesWithStatus)) {
     return Drupal::service('va_gov_post_api.queue_facility_status_updates')->queueFacilityStatus($entity);
